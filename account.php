@@ -20,7 +20,7 @@ $userdetails = fetchUserDetails(NULL, NULL, $get_info_id); //Fetch user details
             <div class="left"></div>
             <div class="right">
               <span class="count_top"><i class="fa fa-user"></i> Total Users</span>
-              <div class="count">2500</div>
+              <div class="count">2600</div>
               <span class="count_bottom"><i class="green">4% </i> From last Week</span>
             </div>
           </div>
@@ -747,13 +747,6 @@ $userdetails = fetchUserDetails(NULL, NULL, $get_info_id); //Fetch user details
               </div>
               <!-- end of weather widget -->
             </div>
-
-
-
-
-
-
-
           </div>
 
         </div>
