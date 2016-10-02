@@ -750,15 +750,6 @@ $userdetails = fetchUserDetails(NULL, NULL, $get_info_id); //Fetch user details
 
 
 
-<div class="col-xs-12 col-md-9">
-		<h1><?=ucfirst($user->data()->username)?></h1>
-		<p><?=ucfirst($user->data()->fname)." ".ucfirst($user->data()->lname)?></p>
-		<p>Member Since:<?=$signupdate?></p>
-		<p>Number of Logins: <?=$user->data()->logins?></p>
-		<p>This is the private account page for your users. It can be whatever you want it to be; This code serves as a guide on how to use some of the built-in UserSpice functionality. </p>
-
-	</div>
-
 
 
 
