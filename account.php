@@ -11,6 +11,7 @@ $raw = date_parse($user->data()->join_date);
 $signupdate = $raw['month']."/".$raw['day']."/".$raw['year'];
 $userdetails = fetchUserDetails(NULL, NULL, $get_info_id); //Fetch user details
  ?>
+ 
       <!-- page content -->
       <div class="right_col" role="main">
 
@@ -19,7 +20,7 @@ $userdetails = fetchUserDetails(NULL, NULL, $get_info_id); //Fetch user details
           <div class="animated flipInY col-md-2 col-sm-4 col-xs-4 tile_stats_count">
             <div class="left"></div>
             <div class="right">
-              <span class="count_top"><i class="fa fa-user"></i> Total Users</span>
+              <span class="count_top"><i class="fa fa-user"></i> Restaurant</span>
               <div class="count">2600</div>
               <span class="count_bottom"><i class="green">4% </i> From last Week</span>
             </div>
@@ -74,12 +75,12 @@ $userdetails = fetchUserDetails(NULL, NULL, $get_info_id); //Fetch user details
 
               <div class="row x_title">
                 <div class="col-md-6">
-                  <h3>Network Activities <small>Graph title sub-title</small></h3>
+                  <h3>Afacerea <small>Total afacere din toate locatile</small></h3>
                 </div>
                 <div class="col-md-6">
                   <div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
                     <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
-                    <span>December 30, 2014 - January 28, 2015</span> <b class="caret"></b>
+                    <span></span> <b class="caret"></b>
                   </div>
                 </div>
               </div>
@@ -90,15 +91,16 @@ $userdetails = fetchUserDetails(NULL, NULL, $get_info_id); //Fetch user details
                   <div id="canvas_dahs" class="demo-placeholder" style="width: 100%; height:270px;"></div>
                 </div>
               </div>
+			  
               <div class="col-md-3 col-sm-3 col-xs-12 bg-white">
                 <div class="x_title">
-                  <h2>Top Campaign Performance</h2>
+                  <h2>Top Comenzi</h2>
                   <div class="clearfix"></div>
                 </div>
 
                 <div class="col-md-12 col-sm-12 col-xs-6">
                   <div>
-                    <p>Facebook Campaign</p>
+                    <p>Jubile</p>
                     <div class="">
                       <div class="progress progress_sm" style="width: 76%;">
                         <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="80"></div>
@@ -106,7 +108,7 @@ $userdetails = fetchUserDetails(NULL, NULL, $get_info_id); //Fetch user details
                     </div>
                   </div>
                   <div>
-                    <p>Twitter Campaign</p>
+                    <p>Jubile1</p>
                     <div class="">
                       <div class="progress progress_sm" style="width: 76%;">
                         <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="60"></div>
@@ -116,7 +118,7 @@ $userdetails = fetchUserDetails(NULL, NULL, $get_info_id); //Fetch user details
                 </div>
                 <div class="col-md-12 col-sm-12 col-xs-6">
                   <div>
-                    <p>Conventional Media</p>
+                    <p>Jubile2</p>
                     <div class="">
                       <div class="progress progress_sm" style="width: 76%;">
                         <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="40"></div>
@@ -124,7 +126,7 @@ $userdetails = fetchUserDetails(NULL, NULL, $get_info_id); //Fetch user details
                     </div>
                   </div>
                   <div>
-                    <p>Bill boards</p>
+                    <p>Jubile3</p>
                     <div class="">
                       <div class="progress progress_sm" style="width: 76%;">
                         <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="50"></div>
@@ -140,120 +142,36 @@ $userdetails = fetchUserDetails(NULL, NULL, $get_info_id); //Fetch user details
           </div>
 
         </div>
+		
         <br />
-
+		
         <div class="row">
-
-
-          <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="x_panel tile fixed_height_320">
-              <div class="x_title">
-                <h2>App Versions</h2>
-                <ul class="nav navbar-right panel_toolbox">
-                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                  </li>
-                  <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href="#">Settings 1</a>
-                      </li>
-                      <li><a href="#">Settings 2</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li><a class="close-link"><i class="fa fa-close"></i></a>
-                  </li>
-                </ul>
-                <div class="clearfix"></div>
-              </div>
-              <div class="x_content">
-                <h4>App Usage across versions</h4>
-                <div class="widget_summary">
-                  <div class="w_left w_25">
-                    <span>0.1.5.2</span>
-                  </div>
-                  <div class="w_center w_55">
-                    <div class="progress">
-                      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 66%;">
-                        <span class="sr-only">60% Complete</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="w_right w_20">
-                    <span>123k</span>
-                  </div>
+           <div class="col-md-4 col-sm-6 col-xs-12" >
+              <div class="x_panel" style="width: 100%; height:100%;">
+                <div class="x_title">
+                  <h2>Bar Graph <small>Sessions</small></h2>
+                  <ul class="nav navbar-right panel_toolbox">
+                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Settings 1</a>
+                        </li>
+                        <li><a href="#">Settings 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a class="close-link"><i class="fa fa-close"></i></a>
+                    </li>
+                  </ul>
                   <div class="clearfix"></div>
                 </div>
-
-                <div class="widget_summary">
-                  <div class="w_left w_25">
-                    <span>0.1.5.3</span>
-                  </div>
-                  <div class="w_center w_55">
-                    <div class="progress">
-                      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 45%;">
-                        <span class="sr-only">60% Complete</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="w_right w_20">
-                    <span>53k</span>
-                  </div>
-                  <div class="clearfix"></div>
+                <div class="x_content" style="width: 100%; height:100%;">
+                  <canvas id="mybarChart" style="width: 100%; height:100%;"></canvas>
                 </div>
-                <div class="widget_summary">
-                  <div class="w_left w_25">
-                    <span>0.1.5.4</span>
-                  </div>
-                  <div class="w_center w_55">
-                    <div class="progress">
-                      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">
-                        <span class="sr-only">60% Complete</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="w_right w_20">
-                    <span>23k</span>
-                  </div>
-                  <div class="clearfix"></div>
-                </div>
-                <div class="widget_summary">
-                  <div class="w_left w_25">
-                    <span>0.1.5.5</span>
-                  </div>
-                  <div class="w_center w_55">
-                    <div class="progress">
-                      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 5%;">
-                        <span class="sr-only">60% Complete</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="w_right w_20">
-                    <span>3k</span>
-                  </div>
-                  <div class="clearfix"></div>
-                </div>
-                <div class="widget_summary">
-                  <div class="w_left w_25">
-                    <span>0.1.5.6</span>
-                  </div>
-                  <div class="w_center w_55">
-                    <div class="progress">
-                      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 2%;">
-                        <span class="sr-only">60% Complete</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="w_right w_20">
-                    <span>1k</span>
-                  </div>
-                  <div class="clearfix"></div>
-                </div>
-
               </div>
             </div>
-          </div>
-
           <div class="col-md-4 col-sm-4 col-xs-12">
             <div class="x_panel tile fixed_height_320 overflow_hidden">
               <div class="x_title">
@@ -792,6 +710,7 @@ $userdetails = fetchUserDetails(NULL, NULL, $get_info_id); //Fetch user details
   <script src="js/chartjs/chart.min.js"></script>
 
   <script src="js/custom.js"></script>
+  <script src="js/pace/pace.min.js"></script>
 
   <!-- flot js -->
   <!--[if lte IE 8]><script type="text/javascript" src="js/excanvas.min.js"></script><![endif]-->
@@ -804,29 +723,100 @@ $userdetails = fetchUserDetails(NULL, NULL, $get_info_id); //Fetch user details
   <script type="text/javascript" src="js/flot/jquery.flot.stack.js"></script>
   <script type="text/javascript" src="js/flot/curvedLines.js"></script>
   <script type="text/javascript" src="js/flot/jquery.flot.resize.js"></script>
+ 
   <script>
     $(document).ready(function() {
+		var cb = function(start, end, label) {
+        console.log(start.toISOString(), end.toISOString(), label);
+        $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+        //alert("Callback has fired: [" + start.format('MMMM D, YYYY') + " to " + end.format('MMMM D, YYYY') + ", label = " + label + "]");
+      }
+
+      var optionSet1 = {
+        startDate: moment().subtract(29, 'days'),
+        endDate: moment(),
+        minDate: '01/01/2015',
+        maxDate: '12/31/3016',
+        dateLimit: {
+          days: 60
+        },
+        showDropdowns: true,
+        showWeekNumbers: true,
+        timePicker: false,
+        timePickerIncrement: 1,
+        timePicker12Hour: true,
+        ranges: {
+          'Astazi': [moment(), moment()],
+          'Ieri': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+          'Acum 7 zile': [moment().subtract(6, 'days'), moment()],
+          'Acum 30 zile': [moment().subtract(29, 'days'), moment()],
+          'luna asta': [moment().startOf('month'), moment().endOf('month')],
+          'Luna trecuta': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+        },
+        opens: 'left',
+        buttonClasses: ['btn btn-default'],
+        applyClass: 'btn-small btn-primary',
+        cancelClass: 'btn-small',
+        format: 'MM/DD/YYYY',
+        separator: ' to ',
+        locale: {
+          applyLabel: 'Submit',
+          cancelLabel: 'Clear',
+          fromLabel: 'From',
+          toLabel: 'To',
+          customRangeLabel: 'Custom',
+          daysOfWeek: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+          monthNames: ['Ianuarie', 'Febroarie', 'Martie', 'Aprilie', 'mai', 'Iunie', 'Iulie', 'August', 'Septembrie', 'Octombrie', 'Noiembrie', 'Decembrie'],
+          firstDay: 1
+        }
+      };
+      $('#reportrange span').html(moment().subtract(29, 'days').format('MMMM D, YYYY') + ' - ' + moment().format('MMMM D, YYYY'));
+      $('#reportrange').daterangepicker(optionSet1, cb);
+      $('#reportrange').on('show.daterangepicker', function() {
+        console.log("show event fired");
+      });
+      $('#reportrange').on('hide.daterangepicker', function() {
+        console.log("hide event fired");
+      });
+      $('#reportrange').on('apply.daterangepicker', function(ev, picker) {
+        console.log("apply event fired, start/end dates are " + picker.startDate.format('MMMM D, YYYY') + " to " + picker.endDate.format('MMMM D, YYYY'));
+      });
+      $('#reportrange').on('cancel.daterangepicker', function(ev, picker) {
+        console.log("cancel event fired");
+      });
+      $('#options1').click(function() {
+        $('#reportrange').data('daterangepicker').setOptions(optionSet1, cb);
+      });
+      $('#options2').click(function() {
+        $('#reportrange').data('daterangepicker').setOptions(optionSet2, cb);
+      });
+      $('#destroy').click(function() {
+        $('#reportrange').data('daterangepicker').remove();
+      });
+		
+		
       // [17, 74, 6, 39, 20, 85, 7]
       //[82, 23, 66, 9, 99, 6, 2]
       var data1 = [
-        [gd(2012, 1, 1), 17],
-        [gd(2012, 1, 2), 74],
-        [gd(2012, 1, 3), 6],
-        [gd(2012, 1, 4), 39],
-        [gd(2012, 1, 5), 20],
-        [gd(2012, 1, 6), 85],
-        [gd(2012, 1, 7), 7]
+        [gd(2016, 1, 1), 17],
+        [gd(2016, 1, 2), 74],
+        [gd(2016, 1, 3), 6],
+        [gd(2016, 1, 4), 39],
+        [gd(2016, 1, 5), 20],
+        [gd(2016, 1, 6), 85],
+        [gd(2016, 1, 7), 7]
       ];
 
       var data2 = [
-        [gd(2012, 1, 1), 82],
-        [gd(2012, 1, 2), 23],
-        [gd(2012, 1, 3), 66],
-        [gd(2012, 1, 4), 9],
-        [gd(2012, 1, 5), 119],
-        [gd(2012, 1, 6), 6],
-        [gd(2012, 1, 7), 9]
+        [gd(2016, 1, 1), 82],
+        [gd(2016, 1, 2), 23],
+        [gd(2016, 1, 3), 66],
+        [gd(2016, 1, 4), 9],
+        [gd(2016, 1, 5), 119],
+        [gd(2016, 1, 6), 6],
+        [gd(2016, 1, 7), 9]
       ];
+	  
       $("#canvas_dahs").length && $.plot($("#canvas_dahs"), [
         data1, data2
       ], {
@@ -879,8 +869,48 @@ $userdetails = fetchUserDetails(NULL, NULL, $get_info_id); //Fetch user details
         return new Date(year, month - 1, day).getTime();
       }
     });
-  </script>
+	
+	
+	
+	
+	
+	
 
+	
+  </script>
+ 
+
+<?php
+// Set up the ORM library
+require_once('lib/setup.php');
+?>		
+
+
+	<script>
+	
+	 // Bar chart
+    var ctx = document.getElementById("mybarChart").getContext("2d");
+    var mybarChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ["Jubile", "Co1"],
+        datasets: [{
+          label: 'Profit',
+          backgroundColor: "#26B99A",
+          data: <?php echo $data; ?>
+        },
+		{
+          label: 'Scadere',
+          backgroundColor: "#03586A",
+          data: <?php echo $scadere; ?>
+        }
+		]
+      }
+
+      
+    });
+	</script>
+	
   <!-- worldmap -->
   <script type="text/javascript" src="js/maps/jquery-jvectormap-2.0.3.min.js"></script>
   <script type="text/javascript" src="js/maps/gdp-data.js"></script>
@@ -968,78 +998,9 @@ $userdetails = fetchUserDetails(NULL, NULL, $get_info_id); //Fetch user details
   </script>
   <!-- /dashbord linegraph -->
   <!-- datepicker -->
-  <script type="text/javascript">
-    $(document).ready(function() {
-
-      var cb = function(start, end, label) {
-        console.log(start.toISOString(), end.toISOString(), label);
-        $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
-        //alert("Callback has fired: [" + start.format('MMMM D, YYYY') + " to " + end.format('MMMM D, YYYY') + ", label = " + label + "]");
-      }
-
-      var optionSet1 = {
-        startDate: moment().subtract(29, 'days'),
-        endDate: moment(),
-        minDate: '01/01/2012',
-        maxDate: '12/31/2015',
-        dateLimit: {
-          days: 60
-        },
-        showDropdowns: true,
-        showWeekNumbers: true,
-        timePicker: false,
-        timePickerIncrement: 1,
-        timePicker12Hour: true,
-        ranges: {
-          'Today': [moment(), moment()],
-          'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-          'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-          'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-          'This Month': [moment().startOf('month'), moment().endOf('month')],
-          'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
-        },
-        opens: 'left',
-        buttonClasses: ['btn btn-default'],
-        applyClass: 'btn-small btn-primary',
-        cancelClass: 'btn-small',
-        format: 'MM/DD/YYYY',
-        separator: ' to ',
-        locale: {
-          applyLabel: 'Submit',
-          cancelLabel: 'Clear',
-          fromLabel: 'From',
-          toLabel: 'To',
-          customRangeLabel: 'Custom',
-          daysOfWeek: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
-          monthNames: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-          firstDay: 1
-        }
-      };
-      $('#reportrange span').html(moment().subtract(29, 'days').format('MMMM D, YYYY') + ' - ' + moment().format('MMMM D, YYYY'));
-      $('#reportrange').daterangepicker(optionSet1, cb);
-      $('#reportrange').on('show.daterangepicker', function() {
-        console.log("show event fired");
-      });
-      $('#reportrange').on('hide.daterangepicker', function() {
-        console.log("hide event fired");
-      });
-      $('#reportrange').on('apply.daterangepicker', function(ev, picker) {
-        console.log("apply event fired, start/end dates are " + picker.startDate.format('MMMM D, YYYY') + " to " + picker.endDate.format('MMMM D, YYYY'));
-      });
-      $('#reportrange').on('cancel.daterangepicker', function(ev, picker) {
-        console.log("cancel event fired");
-      });
-      $('#options1').click(function() {
-        $('#reportrange').data('daterangepicker').setOptions(optionSet1, cb);
-      });
-      $('#options2').click(function() {
-        $('#reportrange').data('daterangepicker').setOptions(optionSet2, cb);
-      });
-      $('#destroy').click(function() {
-        $('#reportrange').data('daterangepicker').remove();
-      });
-    });
-  </script>
+ 
+  
+  
   <script>
     NProgress.done();
   </script>

@@ -54,6 +54,22 @@ function fetchUserjsonLG2()
 	return $count;
 	return $results;
 	}
+	
+// Bar Chart for Signup Counts
+function fetchSales()
+	{
+	// Example query
+	$db = DB::getInstance();
+	$stmt = $db->query("select * from sales order by id");
+	$stmt->execute();
+	$stmt->bind_result($month, $amount);
+	while ($stmt->fetch())
+		{
+		$row[] = array('month' => $month, 'amount' => $amount);
+		}
+	$stmt->close();
+	return ($row);
+	}
 
 // Bar Chart for Signup Counts
 function fetchUserjsonLG()
@@ -204,6 +220,6 @@ function ago($time) {
 	return $result;
 	}
 
-
+	
 
 	?>
